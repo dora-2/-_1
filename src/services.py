@@ -12,12 +12,12 @@ def dgvljdb():
             w.append(i)
     return w
 
-print(dgvljdb())
+# print(dgvljdb())
 
-# json_data = json.dumps(dgvljdb(), indent=4)
-#
-# # Запишем данные в файл
-# with open("services.json", "w") as file:
-#     file.write(json_data)
-#
-# print("JSON файл успешно создан!")
+json_data = json.dumps(dgvljdb(), indent=4)
+
+# Запишем данные в файл
+with open("services.json", "w") as file:
+    file.write(json_data)
+
+print("JSON файл успешно создан!")
